@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140">
+    <g transform="skewX(-12)">
+        <text x="20" y="95" font-family="Arial Black, Arial, sans-serif" font-size="78" font-weight="900" fill="#1A2433">
+            VISA
+        </text>
+    </g>
+
+    <circle cx="280" cy="70" r="34" fill="#EB001B"></circle>
+    <circle cx="332" cy="70" r="34" fill="#F7B538"></circle>
+
+    <path d="M306 36
+           A34 34 0 0 1 306 104
+           A34 34 0 0 1 306 36" fill="#F26A21" opacity="0.9"></path>
+</svg>
