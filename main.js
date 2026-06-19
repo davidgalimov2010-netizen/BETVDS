@@ -7,7 +7,6 @@ const close = document.querySelector(".close_button");
 const input1 = document.querySelector(".input_content input");
 const input2 = document.querySelector(".input_content_3 input");
 const input3 = document.querySelector(".input_content_4 input");
-
 const number1 = document.querySelector(".number_1");
 const number2 = document.querySelector(".number_2");
 const number3 = document.querySelector(".number_3");
