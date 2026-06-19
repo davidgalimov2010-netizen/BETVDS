@@ -7,7 +7,7 @@ const close = document.querySelector(".close_button");
 const input1 = document.querySelector(".input_content input");
 const input2 = document.querySelector(".input_content_3 input");
 const input3 = document.querySelector(".input_content_4 input");
-const input4 = document.querySelector(".input_container_3");
+
 const number1 = document.querySelector(".number_1");
 const number2 = document.querySelector(".number_2");
 const number3 = document.querySelector(".number_3");
@@ -17,32 +17,41 @@ const orderBtn3 = document.querySelector(".order-btn3");
 const card = document.querySelector(".hero_card");
 
 card1.addEventListener("click", () => {
-  card1.classList.add("active");
-  card2.classList.remove("active");
-  card3.classList.remove("active");
+  card1.classList.toggle("active");
 
   if (card1.classList.contains("active")) {
+    card2.classList.remove("active");
+    card3.classList.remove("active");
+
     number1.classList.add("green");
+  } else {
+    number1.classList.remove("green");
   }
 });
 
 card2.addEventListener("click", () => {
-  card2.classList.add("active");
-  card1.classList.remove("active");
-  card3.classList.remove("active");
+  card2.classList.toggle("active");
 
   if (card2.classList.contains("active")) {
+    card1.classList.remove("active");
+    card3.classList.remove("active");
+
     number1.classList.add("green");
+  } else {
+    number1.classList.remove("green");
   }
 });
 
 card3.addEventListener("click", () => {
-  card3.classList.add("active");
-  card1.classList.remove("active");
-  card2.classList.remove("active");
+  card3.classList.toggle("active");
 
   if (card3.classList.contains("active")) {
+    card1.classList.remove("active");
+    card2.classList.remove("active");
+
     number1.classList.add("green");
+  } else {
+    number1.classList.remove("green");
   }
 });
 
@@ -73,6 +82,7 @@ input1.addEventListener("input", () => {
 input2.addEventListener("input", () => {
   if (input2.value.trim() !== "") {
     number3.classList.add("green");
+    input3.classList.add("flex");
   }
 
   if (input2.value.trim() == "") {

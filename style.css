@@ -175,7 +175,7 @@ header button:hover {
   transition: 0.7s;
 }
 
-.hero_button button:hover {
+.hero_button button :hover {
   transform: scale(1.1);
   transition: 0.7s;
 }
@@ -770,6 +770,10 @@ hr {
   height: 80px;
 }
 
+.card {
+  transition: 0.7s;
+}
+
 .number {
   width: 40px;
   height: 40px;
@@ -822,6 +826,14 @@ hr {
   padding-left: 10px;
   color: #b9b9b9;
   font-size: 12px;
+}
+
+.input_content_4 input {
+  display: none;
+}
+
+.input_content_4 .flex input {
+  display: flex;
 }
 
 .number_3 {
