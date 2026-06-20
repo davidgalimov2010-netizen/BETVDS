@@ -14,6 +14,8 @@ const orderBtn1 = document.querySelector(".order-btn1");
 const orderBtn2 = document.querySelector(".order-btn2");
 const orderBtn3 = document.querySelector(".order-btn3");
 const card = document.querySelector(".hero_card");
+const input2 = document.getElementById('input2')
+const promo = document.getElementById('prom/')
 
 card1.addEventListener("click", () => {
   card1.classList.toggle("active");
@@ -81,10 +83,9 @@ input1.addEventListener("input", () => {
 input2.addEventListener("input", () => {
   if (input2.value.trim() !== "") {
     number3.classList.add("green");
-    input3.classList.add("flex");
-  }
-
-  if (input2.value.trim() == "") {
+    input3.style.display = "block";
+  } else {
+    input3.style.display = "none";
     number3.classList.remove("green");
   }
 });
